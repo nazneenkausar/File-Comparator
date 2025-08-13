@@ -5,7 +5,7 @@ const { CompareController } = require('./CompareController');
 const path = require('path');
 const app = express();
 const upload = multer({ dest: 'uploads/' });
-const PORT = 3000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, '../client/dist')));
