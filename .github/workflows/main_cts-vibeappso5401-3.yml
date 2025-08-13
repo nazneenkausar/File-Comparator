@@ -53,7 +53,8 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'CTS-VibeAppce21203-2'  # <-- Make sure this matches your Azure Web App name
+          app-name: 'CTS-VibeAppso5401-3'  # <-- Make sure this matches your Azure Web App name
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE}}
+
