@@ -2,13 +2,16 @@ const express = require('express');
 const multer = require('multer');
 const cors = require('cors');
 const { CompareController } = require('./CompareController');
-
+const path = require('path');
 const app = express();
 const upload = multer({ dest: 'uploads/' });
 const PORT = 3000;
 
 app.use(cors());
-
+app.use(express.static(path.join(__dirname, '../client/dist')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/dist', 'index.html'));
+});
 // Health check endpoint
 app.get('/', (req, res) => {
   res.send('Hello, server is alive!');
