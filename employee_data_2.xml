@@ -1,0 +1,52 @@
+<Company>
+  <Department name="Engineering">
+    <Employee id="101">
+      <Name>John Doe</Name>
+      <Role>Lead Developer</Role>
+      <Contact>
+        <Email>john.doe@company.com</Email>
+        <Phone>123-456-7890</Phone>
+        <Slack>@johndoe</Slack>
+      </Contact>
+      <Skills>
+        <Skill>JavaScript</Skill>
+        <Skill>React</Skill>
+        <Skill>TypeScript</Skill>
+      </Skills>
+      <Active>true</Active>
+    </Employee>
+    <Employee id="103">
+      <Name>Mike Brown</Name>
+      <Role>DevOps Engineer</Role>
+      <Contact>
+        <Email>mike.brown@company.com</Email>
+        <Phone>987-654-3210</Phone>
+      </Contact>
+      <Skills>
+        <Skill>AWS</Skill>
+        <Skill>Docker</Skill>
+      </Skills>
+      <Active>true</Active>
+    </Employee>
+  </Department>
+  <Department name="HR">
+    <Employee id="201">
+      <Name>Emily Johnson</Name>
+      <Role>HR Manager</Role>
+      <Contact>
+        <Email>emily.johnson@company.com</Email>
+        <Phone>222-333-4444</Phone>
+      </Contact>
+      <Active>true</Active>
+    </Employee>
+    <Employee id="202">
+      <Name>Sarah Lee</Name>
+      <Role>Recruiter</Role>
+      <Contact>
+        <Email>sarah.lee@company.com</Email>
+        <Phone>888-999-0000</Phone>
+      </Contact>
+      <Active>false</Active>
+    </Employee>
+  </Department>
+</Company>
